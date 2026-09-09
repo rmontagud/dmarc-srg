@@ -90,7 +90,7 @@ class Host
                     $res[] = [ $fld, $this->rdnsName() ];
                     break;
                 case 'main.rip':
-                    $res[] = [ $fld, $this->checkReverseIp() ];
+                    $res[] = [ $fld, $this->checkReverseIP() ];
                     break;
                 default:
                     if (!$sts && substr($fld, 0, 6) === 'stats.') {
